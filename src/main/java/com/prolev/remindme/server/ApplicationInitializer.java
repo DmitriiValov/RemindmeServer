@@ -1,6 +1,7 @@
 package com.prolev.remindme.server;
 
 import com.prolev.remindme.server.config.WebConfig;
+import com.prolev.remindme.server.repository.RemindRepository;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
@@ -16,6 +17,8 @@ import javax.servlet.ServletRegistration;
 public class ApplicationInitializer implements WebApplicationInitializer {
 
     private final static String DISPATCHER = "dispatcher";
+
+//    private RemindRepository repository;
 
     public void onStartup(ServletContext servletContext) throws ServletException {
 
